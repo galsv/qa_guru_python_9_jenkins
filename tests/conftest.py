@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selene import Browser, Config
 from selene.support.shared import browser
+from dotenv import load_dotenv
 
 from utils import attach
 
@@ -17,6 +18,11 @@ def pytest_addoption(parser):
         '--browser_version',
         default='100.0'
     )
+
+
+@pytest.fixture(scope='session', autouse=True)
+def load_env():
+    load_dotenv()
 
 
 @pytest.fixture(scope='session', autouse=True)
