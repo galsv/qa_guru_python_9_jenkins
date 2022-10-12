@@ -8,7 +8,7 @@ def type_by_id(id, value):
 
 def type_date_of_bithday(date):
     name_os = sys.platform
-    if name_os == 'win32':
+    if name_os == 'win32' or name_os == 'linux':
         browser.element("#dateOfBirthInput").send_keys(Keys.CONTROL + 'a').type(date).press_enter()
     else:
         browser.element("#dateOfBirthInput").send_keys(Keys.COMMAND + 'a').type(date).press_enter()
