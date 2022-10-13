@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "Test user registration",
+    "environment": "some env",
+    "comment": "Test for test)",
+    "reportLink": "",
+    "language": "en",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "1326475114:AAEjRDjUvZgbCNc0gMySnP9ocd7bMvFKrMs",
+    "chat": "-1001247317992",
+    "replyTo": ""
+  }
+}
